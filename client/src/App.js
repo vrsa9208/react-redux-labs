@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LandingPage from './components/LandingPage';
+import FilmDetails from './components/FilmDetails';
+import PickSeats from './components/PickSeats';
+import Checkout from './components/Checkout';
+import Login from './components/Login';
 
 class App extends Component {
   render() {
@@ -15,11 +19,9 @@ class App extends Component {
               <li><a href="#"></a>Checkout</li>
             </ul>
           </div>
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Dinner and A Movie</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <LandingPage />
       </div>
     );
   }
